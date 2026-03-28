@@ -1,47 +1,140 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.nav-bar{
+.navbar{
     display: flex;
-    justify-content: space-between;
-    padding: 10px 400px;
-    gap: 20%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 50px;
+    
 }
 
-.logo{
-    padding: 10px;
-    gap: 10%;
-
-}
-
-.links{
-    margin-right: 30px;
-}
-
-.links ul{
+.logo-section{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 15%;
-    margin-left: 30px;
-}
-
-.links ul li{
-    list-style: none;
-}
-
-.links ul button{
-    background-color: #A53DFF;
-    color:white;
-    padding: 15px;
-    border-radius: 5px;
-    border: 0px;
+    gap: 10px;
+    margin-left: 100px;
     
+}
+
+.logo-img{
+    height: 40px;
+}
+
+.logo-name{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-btn{
+    padding: 10px 20px;
+    background-color: #A53DFF;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.nav-btn:hover{
+    background-color: #03a300;
+    animation: pulse 0.3s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.home-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 200px;
+
+}
+
+.home{
+    padding: 0px 80px;
+    margin-right: 20px;
+}
+
+.home-details{
+    padding: 30px;
+    
+}
+.home-details p{
+    padding-bottom: 10px;
+    padding-right: 200px;
+    
+}
+.home-details h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.home-others{
+    padding: 30px;
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.home-others div{
+    width: 150px;
+    background-color: #EDD8FF80;
+    color: #282727;
+    border-radius: 5px;
+}
+.home-others div h3{
+    text-align: center;
+    padding-top: 10px;
+}
+.home-others div p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile{
+    margin: 30px;
+}
+.profile-img{
+    padding: 30px;
+    width: 300px;
+    border-radius: 5px;
+    height: auto;
+    background-color: #f8f6f6;
 }
